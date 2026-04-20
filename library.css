@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.sidebar{
+    position: relative;
+   background-color: rgb(17, 208, 233);
+   width: 15rem;
+   height: 45.6rem;
+   left: -252px;
+
+  
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 10rem;
+    font-size: 1.3rem;
+     border-bottom: 1px solid white;
+     color: rgb(255, 255, 255);
+     font-weight: bolder;
+}
+header{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    border-bottom: 1px solid white;
+    height: 6rem;
+}
+#check{
+    display: none;
+}
+label #menu, label #cancel {
+    position: absolute;
+    background-color: aqua;
+}
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #menu{
+    margin-left: 16rem;
+    opacity: 0;
+}
+#check:checked ~ label #cancel{
+    margin-left: 15.1rem;
+    opacity: 1;
+    visibility: visible;
+}
+#check:checked ~ .sidebar{
+   left: 0;
+}
+#check:checked ~ .main-content{
+    margin-left: 15rem;
+}
+.container{
+    display: flex;
+}
+.main-content{
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-top:3rem ;
+gap: .5rem;
+}
+input{
+    width: 49rem;
+    height: 2rem;
+    border-radius: .3rem;
+    border:1px solid rgb(134, 137, 140);
+    color: rgb(106, 110, 114);
+    background-color: rgb(235, 235, 235);
+}
+h2{
+    background-color: rgb(224, 131, 59);
+    border-radius: 2rem;
+    height: 2.4rem;
+    text-align: center;
+}
+#Add-book{
+    width: 30rem;
+    height: 3rem;
+    border-radius: 3rem;
+    font-size: large;
+    text-align: center;
+    border: none;
+    font-weight: bolder;
+    background-color: rgb(255, 149, 0);
+}
+.display-section{
+    display: flex;
+    gap: 6rem;
+    
+}
+#title{
+    border-left: 1px solid rgb(227, 105, 6);
+    border-radius: 5px;
+    height: 7rem;
+
+}
+#author{
+    border-left: 1px solid rgb(227, 105, 6);
+    border-radius: 5px;
+    height: 7rem;
+}
+#date{
+    border-left: 1px solid rgb(227, 105, 6);
+    border-radius: 5px;
+    height: 7rem;
+}
+#shelf{
+    border-left: 1px solid rgb(227, 105, 6);
+    border-radius: 5px;
+    height: 7rem;
+}
+#status{
+    border-left: 1px solid rgb(227, 105, 6);
+    border-radius: 5px;
+    height: 7rem;
+}
+#action{
+    border-left: 1px solid rgb(227, 105, 6);
+    border-radius: 5px;
+    height: 7rem;
+}
+
+
+
+
+
