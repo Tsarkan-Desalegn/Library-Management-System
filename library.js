@@ -3,35 +3,70 @@ const AuthorInput = document.getElementById("authorInput");
 const ShelfInput = document.getElementById("shelfInput");
 const DateInput = document.getElementById("dateInput");
 const AddBookButton = document.getElementById("Add-book");
-const DisplayBookTitle = document.getElementById("title");
-const Displayauthor = document.getElementById("author");
-const DisplayBookTitle = document.getElementById("title");
-const DisplayShelfNumber = document.getElementById("shelfNumber");
+const displaySection = document.getElementById("displaySection");
+
 
 function User (title, author, shelf, date ){
     this.title = title;
-    this.author = author;
-    this.shelf = shelf;
-    this.date = date;
+       this.author = author;
+          this.shelf = shelf;
+              this.date = date;
 };
+User.prototype.getitle = function() { return this.title; }
+User.prototype.getauthor = function() { return this.author; }
+User.prototype.getshelf = function() { return this.shelf; }
+User.prototype.getdate = function() { return this.date; }
 
-User.prototype.book = function () {
-    return this.title;
-}
-User.prototype.author = function () {
-    return this.author;
-}
-User.prototype.shelf = function () {
-    return this.shelf;
-}
-User.prototype.date = function () {
-    return this.date;
-}
 AddBookButton.addEventListener("click", ()=>{
-    const ValueOfBook = BookInput.value;
-    const ValueAOfuthor = AuthorInput.value;
-    const ValueOfShelf = ShelfInput.value;
-    const ValueOfDate = DateInput.value;
     
-})
+    const ValueOfBook   = BookInput.value.trim();
+    const ValueOfAuthor = AuthorInput.value.trim();
+    const ValueOfShelf  = ShelfInput.value.trim();
+    const ValueOfDate   = DateInput.value.trim();
+
+
+    if(ValueOfBook && ValueOfAuthor&& ValueOfShelf&& ValueOfDate){
+const ReleaseBook = new User(ValueOfBook, ValueOfAuthor, ValueOfShelf, ValueOfDate);
+
+  const bookDiv = document.createElement("div");
+      bookDiv.classList.add("book-container"); 
+
+      bookDiv.innerHTML = 
+      `     <div class="title">
+               <h3>Book Title </h3>
+               <p>${ReleaseBook.getitle()}</p>
+            </div>
+      
+        <div class="author">
+             <h3 >Book Author</h3>
+             <p>${ReleaseBook.getauthor()}</p>
+       </div>
+            <div class="date">
+               <h3> Shelf Number</h3>
+               <p>${ReleaseBook.getshelf()}</p>
+            </div>
+        <div class="date">
+             <h3>Date</h3>
+             <p>${ReleaseBook.getdate()}</p>
+        </div>`;
+
+          bookDiv.style.border = "2px solid black";
+             bookDiv.style.boxShadow = "1px 1px 12px 2px";
+                 bookDiv.style.borderRadius = ".5rem";
+                    bookDiv.style.backgroundColor = "aqua";
+                            bookDiv.style.fontFamily = "cursive";
+                              bookDiv.style.margin = "10px 0";
+                                 bookDiv.style.padding = "10px";
+    displaySection.appendChild(bookDiv);
+
+    BookInput.value =""; 
+    AuthorInput.value ="";
+    ShelfInput.value = "";
+    DateInput.value ="";
+    }
+});
+
+
+
+
 

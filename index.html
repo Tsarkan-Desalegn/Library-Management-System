@@ -6,6 +6,7 @@
     <title>Library Management System</title>
     <link rel="stylesheet" href="library.css">
     <script src="library.js" defer></script>
+    
 </head>
 <body>
     <div class="container">
@@ -22,20 +23,13 @@
     </div>
 <div class="main-content" id="Home">
    <h2>Library Management System</h2>
- <div><input type="text" placeholder="Book title"></div>
- <div><input type="text" placeholder="Author"></div>
- <div><input type="number" placeholder="Shelf number"></div>
- <div><input type="date" placeholder="Date"></div>
+ <div><input type="text" placeholder="Book title" id="bookInput"></div>
+ <div><input type="text" placeholder="Author" id="authorInput"></div>
+ <div><input type="number" placeholder="Shelf number" id="shelfInput"></div>
+ <div><input type="date" placeholder="Date" id="dateInput"></div>
  <div><button id="Add-book">Add Book</button></div>
- <div class="display-section">
-    <div id="title"></div>
-    <div id="author"></div>
-    <div id="date"></div>
-    <div id="shelf"></div>
-    <div id="status"></div>
-    <div id="action"></div>
- </div>
-</div>
+
+ <div id="displaySection"></div>
 
   </div>
 </body>
