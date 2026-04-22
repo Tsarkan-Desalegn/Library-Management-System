@@ -4,13 +4,11 @@
     text-decoration: none;
 }
 html{
-    background-image: url("library.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: teal;
 }
 .sidebar{
     position: fixed;
-   background-color: rgb(233, 132, 17);
+   background-color: rgb(114, 114, 113);
    width: 15rem;
    height: 45.6rem;
    left: -252px;
@@ -109,8 +107,9 @@ h2{
 }
 .book-container {
   background: linear-gradient(to right, rgb(123, 255, 0), rgb(191, 155, 25));
-  border: 2px solid black;
+  border: none;
    width: 100%;
+   box-shadow: 8px 8px 22px 8px;
 
 }
 

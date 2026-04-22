@@ -51,7 +51,7 @@ const ReleaseBook = new User(ValueOfBook, ValueOfAuthor, ValueOfShelf, ValueOfDa
              <p>${ReleaseBook.getdate()}</p>
         </div>`;
 
-          bookDiv.style.border = "2px solid black";
+          bookDiv.style.border = "2px solid rgb(123, 255, 0)";
              bookDiv.style.boxShadow = "1px 1px 12px 2px";
                  bookDiv.style.borderRadius = ".5rem";
                     bookDiv.style.backgroundColor = "aqua";
@@ -76,7 +76,7 @@ displaySection.addEventListener("click", (event)=>{
 });
 displaySection.addEventListener("click", (event)=>{
   const container =event.target.closest(".book-container");
-  container.textContent = `"Hi manThis is new content"`;
+  container.textContent = `"Hi man This is new content"`;
   container.style.transform= "rotate(0deg)";
   
 });
