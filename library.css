@@ -3,9 +3,14 @@
     padding: 0;
     text-decoration: none;
 }
+html{
+    background-image: url("library.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .sidebar{
-    position: relative;
-   background-color: rgb(17, 208, 233);
+    position: fixed;
+   background-color: rgb(233, 132, 17);
    width: 15rem;
    height: 45.6rem;
    left: -252px;
@@ -54,7 +59,7 @@ label #cancel{
    left: 0;
 }
 #check:checked ~ .main-content{
-    margin-left: 15rem;
+    margin-left: 25rem;
 }
 .container{
     display: flex;
@@ -65,6 +70,7 @@ flex-direction: column;
 text-align: center;
 margin-top:3rem ;
 gap: .5rem;
+margin-left: 5rem;
 }
 input{
     width: 49rem;
@@ -96,17 +102,20 @@ h2{
     gap: 6rem;
     
 }
-
-
 #displaySection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   flex-direction: column;
+}
+.book-container {
+  background: linear-gradient(to right, rgb(123, 255, 0), rgb(191, 155, 25));
+  border: 2px solid black;
+   width: 100%;
 
 }
-.book-container{
-    width: 100%;
-}
+
+
+
 
 
 
