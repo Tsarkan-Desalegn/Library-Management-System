@@ -4,6 +4,7 @@ const ShelfInput = document.getElementById("shelfInput");
 const DateInput = document.getElementById("dateInput");
 const AddBookButton = document.getElementById("Add-book");
 const displaySection = document.getElementById("displaySection");
+const BookContainer =document.querySelectorAll(".book-container")
 
 
 function User (title, author, shelf, date ){
@@ -66,6 +67,19 @@ const ReleaseBook = new User(ValueOfBook, ValueOfAuthor, ValueOfShelf, ValueOfDa
     }
 });
 
+displaySection.addEventListener("click", (event)=>{
+    const container =event.target.closest(".book-container");
+    container.style.transform = "rotatex(180deg)";
+     container.style.transition = "transform 0.6s";
+
+  
+});
+displaySection.addEventListener("click", (event)=>{
+  const container =event.target.closest(".book-container");
+  container.textContent = `"Hi manThis is new content"`;
+  container.style.transform= "rotate(0deg)";
+  
+});
 
 
 
