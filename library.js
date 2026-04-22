@@ -79,7 +79,8 @@ displaySection.addEventListener("click", (event)=>{
   container.textContent = `"Hi man This is new content"`;
   container.style.transform= "rotate(0deg)";
   
-});
+}); 
+ 
 
 
 
