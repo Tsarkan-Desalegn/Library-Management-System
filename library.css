@@ -8,7 +8,7 @@ html{
 }
 .sidebar{
     position: fixed;
-   background-color: rgb(114, 114, 113);
+   background-color: rgb(22, 189, 201);
    width: 15rem;
    height: 45.6rem;
    left: -252px;
@@ -68,15 +68,18 @@ flex-direction: column;
 text-align: center;
 margin-top:3rem ;
 gap: .5rem;
-margin-left: 5rem;
+margin-left: 19rem;
 }
 input{
     width: 49rem;
-    height: 2rem;
+    height: 3rem;
     border-radius: .3rem;
     border:1px solid rgb(134, 137, 140);
     color: rgb(106, 110, 114);
     background-color: rgb(235, 235, 235);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: cursive;
 }
 h2{
     background-color: rgb(224, 131, 59);
@@ -102,17 +105,47 @@ h2{
 }
 #displaySection {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-direction: column;
 }
 .book-container {
-  background: linear-gradient(to right, rgb(123, 255, 0), rgb(191, 155, 25));
+  background: rgb(64, 205, 224);
   border: none;
-   width: 100%;
+  border-left: 10px solid rgb(238, 113, 4);
+   width: 15rem;
+   border-right: 10px solid rgb(238, 113, 4);
    box-shadow: 8px 8px 22px 8px;
+}
+.borrow-return{
+    background-color: rgb(136, 0, 255);
+    border-radius: .5rem;
+    border: 2px solid rgb(136, 0, 255);
+     width: 7rem;
+     height: 2rem;
+     color: white;
+       font-family:fantasy;
+}
+.delete{
+    background-color: rgb(230, 15, 8);
+    border-radius: .5rem;
+    border: 2px solid rgb(230, 15, 8);
+    width: 7rem;
+    height: 2rem;
+    color: white;
+    font-family:fantasy;
+}
+.available{
+   color: white;
+   opacity: .9;
+   border: none;
+}
+#Add-book:hover{
+   background-color:white ;
+}
+#Add-book:ACTIVE{
+   background-color:rgb(238, 113, 4);
 
 }
-
 
 
 
