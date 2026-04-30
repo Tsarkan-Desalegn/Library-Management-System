@@ -4,11 +4,12 @@
     text-decoration: none;
 }
 html{
-  background-color: teal;
+  background-color: rgb(178, 164, 147);
+ 
 }
 .sidebar{
     position: fixed;
-   background-color: rgb(22, 189, 201);
+   background-color: rgb(65, 39, 6);
    width: 15rem;
    height: 45.6rem;
    left: -252px;
@@ -37,7 +38,7 @@ header{
 }
 label #menu, label #cancel {
     position: absolute;
-    background-color: aqua;
+   
 }
 label #cancel{
     opacity: 0;
@@ -111,9 +112,8 @@ h2{
 .book-container {
   background: rgb(64, 205, 224);
   border: none;
-  border-left: 10px solid rgb(238, 113, 4);
+  color: white;
    width: 15rem;
-   border-right: 10px solid rgb(238, 113, 4);
    box-shadow: 8px 8px 22px 8px;
 }
 .borrow-return{
