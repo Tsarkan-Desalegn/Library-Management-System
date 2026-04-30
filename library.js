@@ -63,7 +63,7 @@ const ReleaseBook = new User(ValueOfBook, ValueOfAuthor, ValueOfShelf, ValueOfDa
       
              bookDiv.style.boxShadow = "1px 1px 12px 2px";
                  bookDiv.style.borderRadius = ".5rem";
-                    bookDiv.style.backgroundColor = "aqua";
+                    bookDiv.style.backgroundColor = " rgb(65, 39, 6)";
                             bookDiv.style.fontFamily = "cursive";
                               bookDiv.style.margin = "10px 0";
                                  bookDiv.style.padding = "10px";
